@@ -2,118 +2,148 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Michael Marin Garcia | Portafolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portafolio profesional de Michael Marin, Ingeniero en Informática con experiencia en desarrollo web, APIs, OutSystems y más.">
+  <title>Michael Marin | Ingeniero en Informática</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+  <script defer src="script.js"></script>
 </head>
 <body>
 
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="container">
-      <a href="#" class="logo">Michael Marin</a>
+      <h1 class="logo">Michael Marin</h1>
       <ul class="nav-links">
-        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#perfil">Perfil</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#aptitudes">Aptitudes</a></li>
-        <li><a href="#educacion">Educación</a></li>
-        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-      <button id="menu-toggle" aria-label="Abrir menú">☰</button>
     </div>
   </nav>
 
-  <header class="hero" id="sobre-mi">
+  <!-- HERO / HEADER -->
+  <header class="hero">
     <div class="container hero-content">
       <div class="hero-text">
-        <h1>Michael Marin Garcia</h1>
-        <p>Ingeniero Informático — Diseñando el futuro con código y pasión</p>
+        <h1>Hola, soy Michael</h1>
+        <p>Ingeniero en Informática con experiencia en desarrollo web, integración de APIs y plataformas Low Code como OutSystems.</p>
         <a href="#contacto" class="btn">Contáctame</a>
       </div>
       <div class="hero-image">
-        <!-- Aquí podrías poner una foto o ilustración -->
-        <img src="logo.png" alt="Michael Marin Garcia" />
+        <img src="assets/images/foto-perfil.jpg" alt="Foto de perfil">
       </div>
     </div>
   </header>
 
-  <main class="container">
+  <!-- PERFIL -->
+  <section id="perfil" class="container section fade-in">
+    <h2>Perfil Profesional</h2>
+    <p>Ingeniero en Informática con formación en plataformas Low Code (OutSystems) e integraciones API y BOSS. Me caracterizo por mi curiosidad, proactividad y facilidad para adaptarme y trabajar en equipos multidisciplinarios. Busco una oportunidad para desarrollar mis habilidades técnicas y contribuir con soluciones innovadoras.</p>
+  </section>
 
-    <section id="experiencia" class="section">
-      <h2>Experiencia</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Desarrollador Trainee - Entel</h3>
-          <span class="period">Ago 2024 - May 2025</span>
-          <p>
-            Diseño y optimización de integraciones API, colaborando en soluciones escalables.
-            Uso de BOSS y OutSystems para agilizar desarrollo y mejorar flujos de trabajo.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Desarrollador Junior - Agencia Digital Piso 29</h3>
-          <span class="period">Dic 2023 - Feb 2024</span>
-          <p>
-            Desarrollo, implementación y mantenimiento de software con enfoque en buenas prácticas y aprendizaje continuo.
-          </p>
-        </article>
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="container section fade-in">
+    <h2>Experiencia Laboral</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Desarrollador Trainee – Entel</h3>
+        <p class="period">ago. 2024 – may. 2025 | Híbrido</p>
+        <ul>
+          <li>Diseño e implementación de integraciones API con Apigee.</li>
+          <li>Aplicación de conceptos BOSS para mejorar flujos de trabajo.</li>
+          <li>Desarrollo de aplicaciones en OutSystems en entornos de alta demanda.</li>
+        </ul>
       </div>
-    </section>
-
-    <section id="aptitudes" class="section">
-      <h2>Aptitudes Principales</h2>
-      <ul class="aptitudes-list">
-        <li>OutSystems</li>
-        <li>Aplicaciones Oracle</li>
-        <li>APIs REST</li>
-        <li>HTML / CSS / JavaScript</li>
-        <li>Git / GitHub</li>
-      </ul>
-    </section>
-
-    <section id="educacion" class="section">
-      <h2>Educación</h2>
-      <p><strong>Ingeniería Informática</strong> - Duoc UC</p>
-      <p class="period">Mar 2019 - Jul 2023</p>
-    </section>
-
-    <section id="certificados" class="section">
-      <h2>Certificados</h2>
-      <ul class="cert-list">
-        <li>Pensamiento crítico (2017)</li>
-        <li>Cómo usar preguntas para fomentar el pensamiento crítico y la curiosidad</li>
-        <li>Fundamentals of Digital Image and Video Processing</li>
-        <li>Desarrollo de software Agile</li>
-        <li>Gestión del fracaso para tener éxito</li>
-      </ul>
-    </section>
-
-  </main>
-
-  <section id="contacto" class="contact-section">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>📧 <a href="mailto:mich.marinp@gmail.com">mich.marinp@gmail.com</a></p>
-      <p>📞 <a href="tel:+56971890541">+56 9 7189 0541</a></p>
-      <p>💼 <a href="https://www.linkedin.com/in/michmarindev" target="_blank" rel="noopener noreferrer">linkedin.com/in/michmarindev</a></p>
+      <div class="card">
+        <h3>Desarrollador Junior – Agencia Digital Piso 29</h3>
+        <p class="period">dic. 2023 – feb. 2024 | Remoto</p>
+        <ul>
+          <li>Desarrollo y mantenimiento de sitios web en WordPress y PrestaShop.</li>
+          <li>Soporte técnico y colaboración con equipo de diseño.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Community Manager – Contraplano Medios</h3>
+        <p class="period">abr. 2023 – jun. 2023 | Remoto</p>
+        <ul>
+          <li>Gestión de redes sociales y estrategia digital.</li>
+          <li>Optimización de campañas y análisis de métricas.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Desarrollador Java/SQL – Direbien</h3>
+        <p class="period">nov. 2022 – dic. 2022 | Presencial</p>
+        <ul>
+          <li>Creación de módulo de asignación de firmas con Java y SQL Server.</li>
+          <li>Desarrollo de flujos y pruebas unitarias.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
+  <!-- FORMACIÓN -->
+  <section id="formacion" class="container section fade-in">
+    <h2>Formación Académica</h2>
+    <p><strong>Ingeniería en Informática</strong> – Duoc UC, Viña del Mar (2019–2023)</p>
+    <p><strong>Enseñanza Media</strong> – Liceo Mixto Los Andes (2015–2018)</p>
+    <h3>Cursos Complementarios</h3>
+    <ul class="cert-list">
+      <li>Técnicas de Montaje de Paneles Solares (ICAP – 150 hrs)</li>
+    </ul>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="container section fade-in">
+    <h2>Habilidades Técnicas</h2>
+    <ul class="aptitudes-list">
+      <li>Java</li>
+      <li>Python</li>
+      <li>C#</li>
+      <li>HTML/CSS/JS</li>
+      <li>Vue / React</li>
+      <li>Flask / Django</li>
+      <li>OutSystems</li>
+      <li>WordPress / PrestaShop</li>
+      <li>SQL Server / Oracle / PostgreSQL</li>
+      <li>Apigee / BOSS</li>
+      <li>AWS / Docker / Google Cloud</li>
+      <li>Git / GitHub / VS Code</li>
+    </ul>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="container section fade-in">
+    <h2>Proyectos Destacados</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Gestor de Firmas - Direbien</h3>
+        <p>Aplicación interna para asignar firmas digitales usando Java y SQL Server. Incluyó autenticación y pruebas unitarias.</p>
+      </div>
+      <div class="card">
+        <h3>Sitios Web WordPress</h3>
+        <p>Desarrollo de sitios corporativos y tiendas virtuales para clientes de la agencia Piso 29. Adaptación responsive y soporte continuo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact-section fade-in">
+    <h2>Contacto</h2>
+    <p>📧 <a href="mailto:mich.marinp@gmail.com">mich.marinp@gmail.com</a></p>
+    <p>📱 +56 9 7189 0541</p>
+    <p>💼 <a href="https://www.linkedin.com/in/michmarindev" target="_blank">linkedin.com/in/michmarindev</a></p>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Michael Marin Garcia</p>
+    <p>© 2025 Michael Marin – Portafolio profesional</p>
   </footer>
-
-  <script>
-    // Toggle menu for mobile
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('nav-active');
-    });
-  </script>
 
 </body>
 </html>
