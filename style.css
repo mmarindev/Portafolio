@@ -1,4 +1,3 @@
-/* === FUENTES Y VARIABLES === */
 :root {
   --primary: #5e60ce;
   --secondary: #3f37c9;
@@ -7,6 +6,12 @@
   --accent: #4361ee;
   --card-bg: #1e293b;
   --transition: 0.3s ease;
+  --radius: 12px;
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -21,30 +26,33 @@ body {
 /* === NAVBAR === */
 .navbar {
   background-color: var(--card-bg);
-  padding: 1rem 2rem;
+  padding: 1.2rem 2rem;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: var(--max-width);
+  margin: auto;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--primary);
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .nav-links a {
   color: var(--foreground);
   text-decoration: none;
   transition: var(--transition);
+  font-weight: 500;
 }
 
 .nav-links a:hover {
@@ -55,37 +63,59 @@ body {
 .hero {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
+  gap: 3rem;
+  max-width: var(--max-width);
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .hero-text {
-  flex: 1;
+  flex: 1 1 400px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.hero-image {
+  flex: 1 1 250px;
+  text-align: center;
 }
 
 .hero-image img {
-  width: 250px;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
   border-radius: 50%;
   border: 4px solid white;
 }
 
+/* === BOTÓN === */
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   background: white;
   color: var(--primary);
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: var(--radius);
   transition: var(--transition);
 }
 
@@ -94,33 +124,45 @@ body {
   color: white;
 }
 
-/* === SECTIONS === */
+/* === SECCIONES === */
 .section {
-  padding: 3rem 2rem;
-  max-width: 1000px;
+  padding: 4rem 2rem;
+  max-width: var(--max-width);
   margin: auto;
 }
 
 .section h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: var(--primary);
+  font-size: 2rem;
+  text-align: center;
 }
 
+.section p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+/* === CARDS === */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .card {
   background-color: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
 }
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(67, 97, 238, 0.3);
 }
 
 .card h3 {
@@ -128,28 +170,30 @@ body {
   color: var(--accent);
 }
 
-.card .period {
+.period {
   font-size: 0.9rem;
   color: #94a3b8;
 }
 
+/* === LISTAS === */
 .aptitudes-list,
 .cert-list {
   list-style: none;
   padding-left: 0;
   columns: 2;
-  margin-top: 1rem;
+  margin: 1rem auto;
+  max-width: 800px;
 }
 
 .aptitudes-list li,
 .cert-list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 /* === CONTACTO === */
 .contact-section {
   background: var(--card-bg);
-  padding: 2rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -168,6 +212,7 @@ footer {
   text-align: center;
   padding: 1rem;
   color: #aaa;
+  font-size: 0.9rem;
 }
 
 /* === ANIMACIONES === */
@@ -184,16 +229,18 @@ footer {
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
-  .hero-content {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
     flex-direction: column;
-    text-align: center;
+    gap: 1rem;
+    padding-top: 1rem;
   }
 
-  .hero-image {
-    margin-top: 2rem;
-  }
-
-  .aptitudes-list {
+  .aptitudes-list,
+  .cert-list {
     columns: 1;
   }
 }
