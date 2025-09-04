@@ -2,34 +2,108 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Michael Marin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portafolio - Tu Nombre</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Michael Patrick Marin Garcia</h1>
-    <p>Ingeniero en Informática</p>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Tu Nombre</h1>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#educacion">Educación</a></li>
+        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <h2>Hola, soy <span>Ingeniero en Informática</span></h2>
+      <p>Construyo soluciones tecnológicas con pasión y precisión.</p>
+    </div>
   </header>
 
-  <section>
+  <!-- SOBRE MI -->
+  <section id="sobre-mi" class="container section">
     <h2>Sobre mí</h2>
-    <p>Apasionado por la tecnología y el desarrollo de software, con experiencia en proyectos de programación, bases de datos y automatización.</p>
+    <p>Soy un ingeniero en informática con experiencia en desarrollo web, backend, bases de datos y automatización. Me gusta resolver problemas con código limpio y escalable, y estoy siempre aprendiendo nuevas tecnologías para mejorar como profesional.</p>
   </section>
 
-  <section>
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="container section">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill">💻 HTML / CSS</div>
+      <div class="skill">⚙️ JavaScript</div>
+      <div class="skill">🧠 Python</div>
+      <div class="skill">🗂️ SQL / PostgreSQL</div>
+      <div class="skill">📦 Git / GitHub</div>
+      <div class="skill">🌐 APIs REST</div>
+      <div class="skill">🔧 Node.js</div>
+      <div class="skill">🌍 Linux / Bash</div>
+      <div class="skill">🎨 Bootstrap / Tailwind</div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="container section">
     <h2>Proyectos</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>📋 Gestor de Tareas</h3>
+        <p>App CRUD con Python y SQLite para gestionar tareas diarias.</p>
+        <a href="https://github.com/tuusuario/gestor-tareas" target="_blank">Ver en GitHub</a>
+      </div>
+      <div class="project">
+        <h3>🌐 API REST de productos</h3>
+        <p>API desarrollada en Node.js con Express y MongoDB para una tienda virtual.</p>
+        <a href="https://github.com/tuusuario/api-rest" target="_blank">Ver en GitHub</a>
+      </div>
+      <div class="project">
+        <h3>🛠️ Portafolio personal</h3>
+        <p>Mi sitio personal hecho con HTML, CSS y JavaScript. ¡Este mismo!</p>
+        <a href="https://github.com/tuusuario/mi-portafolio" target="_blank">Ver en GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCACIÓN -->
+  <section id="educacion" class="container section">
+    <h2>Educación</h2>
+    <p><strong>Ingeniería en Informática</strong> - Universidad Tecnológica Ejemplo (2019 - 2024)</p>
+  </section>
+
+  <!-- CERTIFICADOS -->
+  <section id="certificados" class="container section">
+    <h2>Certificados</h2>
     <ul>
-      <li><a href="https://github.com/tuusuario/proyecto1" target="_blank">Gestor de tareas con Python</a></li>
-      <li><a href="https://github.com/tuusuario/proyecto2" target="_blank">API REST con Node.js</a></li>
+      <li>✔️ Desarrollo Web - FreeCodeCamp</li>
+      <li>✔️ Python para Todos - Coursera</li>
+      <li>✔️ Introducción a Git y GitHub - Google</li>
     </ul>
   </section>
 
-  <section>
+  <!-- CONTACTO -->
+  <section id="contacto" class="container section">
     <h2>Contacto</h2>
-    <p>Email: mich.marinp@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/mmarindev" target="_blank">mmarindev</a></p>
+    <p>📧 Email: tunombre@email.com</p>
+    <p>🐙 GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></p>
+    <p>💼 LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
   </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Tu Nombre – Portafolio personal</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
