@@ -2,109 +2,118 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi Portafolio - Tu Nombre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Michael Marin Garcia | Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="container">
-      <h1 class="logo">Tu Nombre</h1>
+      <a href="#" class="logo">Michael Marin</a>
       <ul class="nav-links">
         <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#aptitudes">Aptitudes</a></li>
         <li><a href="#educacion">Educación</a></li>
         <li><a href="#certificados">Certificados</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
+      <button id="menu-toggle" aria-label="Abrir menú">☰</button>
     </div>
   </nav>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="container">
-      <h2>Hola, soy <span>Ingeniero en Informática</span></h2>
-      <p>Construyo soluciones tecnológicas con pasión y precisión.</p>
+  <header class="hero" id="sobre-mi">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Michael Marin Garcia</h1>
+        <p>Ingeniero Informático — Diseñando el futuro con código y pasión</p>
+        <a href="#contacto" class="btn">Contáctame</a>
+      </div>
+      <div class="hero-image">
+        <!-- Aquí podrías poner una foto o ilustración -->
+        <img src="logo.png" alt="Michael Marin Garcia" />
+      </div>
     </div>
   </header>
 
-  <!-- SOBRE MI -->
-  <section id="sobre-mi" class="container section">
-    <h2>Sobre mí</h2>
-    <p>Soy un ingeniero en informática con experiencia en desarrollo web, backend, bases de datos y automatización. Me gusta resolver problemas con código limpio y escalable, y estoy siempre aprendiendo nuevas tecnologías para mejorar como profesional.</p>
-  </section>
+  <main class="container">
 
-  <!-- HABILIDADES -->
-  <section id="habilidades" class="container section">
-    <h2>Habilidades</h2>
-    <div class="skills-grid">
-      <div class="skill">💻 HTML / CSS</div>
-      <div class="skill">⚙️ JavaScript</div>
-      <div class="skill">🧠 Python</div>
-      <div class="skill">🗂️ SQL / PostgreSQL</div>
-      <div class="skill">📦 Git / GitHub</div>
-      <div class="skill">🌐 APIs REST</div>
-      <div class="skill">🔧 Node.js</div>
-      <div class="skill">🌍 Linux / Bash</div>
-      <div class="skill">🎨 Bootstrap / Tailwind</div>
+    <section id="experiencia" class="section">
+      <h2>Experiencia</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Desarrollador Trainee - Entel</h3>
+          <span class="period">Ago 2024 - May 2025</span>
+          <p>
+            Diseño y optimización de integraciones API, colaborando en soluciones escalables.
+            Uso de BOSS y OutSystems para agilizar desarrollo y mejorar flujos de trabajo.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Desarrollador Junior - Agencia Digital Piso 29</h3>
+          <span class="period">Dic 2023 - Feb 2024</span>
+          <p>
+            Desarrollo, implementación y mantenimiento de software con enfoque en buenas prácticas y aprendizaje continuo.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="aptitudes" class="section">
+      <h2>Aptitudes Principales</h2>
+      <ul class="aptitudes-list">
+        <li>OutSystems</li>
+        <li>Aplicaciones Oracle</li>
+        <li>APIs REST</li>
+        <li>HTML / CSS / JavaScript</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section id="educacion" class="section">
+      <h2>Educación</h2>
+      <p><strong>Ingeniería Informática</strong> - Duoc UC</p>
+      <p class="period">Mar 2019 - Jul 2023</p>
+    </section>
+
+    <section id="certificados" class="section">
+      <h2>Certificados</h2>
+      <ul class="cert-list">
+        <li>Pensamiento crítico (2017)</li>
+        <li>Cómo usar preguntas para fomentar el pensamiento crítico y la curiosidad</li>
+        <li>Fundamentals of Digital Image and Video Processing</li>
+        <li>Desarrollo de software Agile</li>
+        <li>Gestión del fracaso para tener éxito</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <section id="contacto" class="contact-section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>📧 <a href="mailto:mich.marinp@gmail.com">mich.marinp@gmail.com</a></p>
+      <p>📞 <a href="tel:+56971890541">+56 9 7189 0541</a></p>
+      <p>💼 <a href="https://www.linkedin.com/in/michmarindev" target="_blank" rel="noopener noreferrer">linkedin.com/in/michmarindev</a></p>
     </div>
   </section>
 
-  <!-- PROYECTOS -->
-  <section id="proyectos" class="container section">
-    <h2>Proyectos</h2>
-    <div class="project-list">
-      <div class="project">
-        <h3>📋 Gestor de Tareas</h3>
-        <p>App CRUD con Python y SQLite para gestionar tareas diarias.</p>
-        <a href="https://github.com/tuusuario/gestor-tareas" target="_blank">Ver en GitHub</a>
-      </div>
-      <div class="project">
-        <h3>🌐 API REST de productos</h3>
-        <p>API desarrollada en Node.js con Express y MongoDB para una tienda virtual.</p>
-        <a href="https://github.com/tuusuario/api-rest" target="_blank">Ver en GitHub</a>
-      </div>
-      <div class="project">
-        <h3>🛠️ Portafolio personal</h3>
-        <p>Mi sitio personal hecho con HTML, CSS y JavaScript. ¡Este mismo!</p>
-        <a href="https://github.com/tuusuario/mi-portafolio" target="_blank">Ver en GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCACIÓN -->
-  <section id="educacion" class="container section">
-    <h2>Educación</h2>
-    <p><strong>Ingeniería en Informática</strong> - Universidad Tecnológica Ejemplo (2019 - 2024)</p>
-  </section>
-
-  <!-- CERTIFICADOS -->
-  <section id="certificados" class="container section">
-    <h2>Certificados</h2>
-    <ul>
-      <li>✔️ Desarrollo Web - FreeCodeCamp</li>
-      <li>✔️ Python para Todos - Coursera</li>
-      <li>✔️ Introducción a Git y GitHub - Google</li>
-    </ul>
-  </section>
-
-  <!-- CONTACTO -->
-  <section id="contacto" class="container section">
-    <h2>Contacto</h2>
-    <p>📧 Email: tunombre@email.com</p>
-    <p>🐙 GitHub: <a href="https://github.com/tuusuario" target="_blank">github.com/tuusuario</a></p>
-    <p>💼 LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">linkedin.com/in/tuusuario</a></p>
-  </section>
-
-  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Tu Nombre – Portafolio personal</p>
+    <p>© 2025 Michael Marin Garcia</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Toggle menu for mobile
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+    });
+  </script>
+
 </body>
 </html>
